@@ -1,0 +1,16 @@
+[package]
+name = "geohashrs"
+version = "0.1.0"
+authors = ["Nabil <blackrez> Servais <nabil@eml.cc>"]
+edition = "2018"
+
+[lib]
+name = "geohashrs"
+crate-type = ["cdylib"]
+
+[dependencies]
+geohash = "0.9.0"
+
+[dependencies.pyo3]
+version = "0.11.1"
+features = ["extension-module"]
