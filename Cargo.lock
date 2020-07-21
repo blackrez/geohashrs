@@ -89,14 +89,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "fastgeohash"
-version = "0.1.0"
-dependencies = [
- "geohash",
- "pyo3",
-]
-
-[[package]]
 name = "geo-types"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -113,6 +105,14 @@ checksum = "a4c97316dbd08e58b49c9f0ab5d37aeca27059065b86b360506ea484bd74b286"
 dependencies = [
  "failure",
  "geo-types",
+]
+
+[[package]]
+name = "geohashrs"
+version = "0.1.3"
+dependencies = [
+ "geohash",
+ "pyo3",
 ]
 
 [[package]]
@@ -185,9 +185,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.72"
+version = "0.2.73"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a9f8082297d534141b30c8d39e9b1773713ab50fdbe4ff30f750d063b3bfd701"
+checksum = "bd7d4bd64732af4bf3a67f367c27df8520ad7e230c5817b8ff485864d80242b9"
 
 [[package]]
 name = "lock_api"
@@ -275,9 +275,9 @@ checksum = "7e0456befd48169b9f13ef0f0ad46d492cf9d2dbb918bcf38e01eed4ce3ec5e4"
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.18"
+version = "1.0.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "beae6331a816b1f65d04c45b078fd8e6c93e8071771f41b8163255bbd8d7c8fa"
+checksum = "04f5f085b5d71e2188cb8271e5da0161ad52c3f227a661a3c135fdf28e258b12"
 dependencies = [
  "unicode-xid",
 ]
