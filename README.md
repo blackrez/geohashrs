@@ -16,8 +16,8 @@ Example:
 
 ```
 >>> from geohashrs import geohash_encode, geohash_decode
->>> geohash_encode(43.3, 5.4, 10)
+>>> geohash_encode(5.4, 43.3, 10)
 'spey6fs0v1'
 >>> geohash_decode('spey6fs0v1')
-[43.299999833106995, 5.399997532367706]
+[5.4, 43.3]
 ```

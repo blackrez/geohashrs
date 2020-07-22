@@ -6,8 +6,8 @@ use geohash::{encode, decode, neighbor, Direction, Coordinate};
 
 /// Encode coords into geohash
 #[pyfunction]
-fn geohash_encode(lat: f64, long: f64, level: usize) -> PyResult<String> {
-    let c = Coordinate { x: long, y: lat};
+fn geohash_encode(x: f64, y: f64, level: usize) -> PyResult<String> {
+    let c = Coordinate { x: x, y: y};
     let geohash_string = geohash::encode(c, level).expect("Invalid coordinate");
     Ok(geohash_string)
 }
@@ -16,7 +16,7 @@ fn geohash_encode(lat: f64, long: f64, level: usize) -> PyResult<String> {
 #[pyfunction]
 fn geohash_decode(hash: &str) -> PyResult<Vec<f64>> {
      let (c, _, _) = decode(&hash).expect("Invalid hash string");
-     let vec = vec![c.y, c.x];
+     let vec = vec![c.x, c.y];
      Ok(vec)
 }
 
