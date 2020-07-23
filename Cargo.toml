@@ -1,9 +1,11 @@
 [package]
 name = "geohashrs"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["nabil@eml.cc"]
 edition = "2018"
 license = "Apache-2.0"
+repository = "https://github.com/blackrez/geohashrs"
+homepage = "https://github.com/blackrez/geohashrs"
 readme = "README.md"
 
 [lib]
@@ -13,8 +15,7 @@ crate-type = ["cdylib", "rlib"]
 [package.metadata.maturin]
 maintainer = "Nabil Servais"
 maintainer-email = "nabil@eml.cc"
-requires-python = ">=3.6"
-project-url = "https://github.com/blackrez/geohashrs"
+requires-python = ">=3.5"
 classifier = ["Programming Language :: Python"]
 
 [dependencies]
