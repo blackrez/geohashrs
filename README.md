@@ -1,6 +1,6 @@
 # geohashrs
 
-This project provides geohash (https://en.wikipedia.org/wiki/Geohash) encoding and decoding based on geohash-rust (https://github.com/georust/geohash). You can use `geohash_encode(latitude, longitude, zoom_level)` to decode and `geohash_decode(geohashstring)` to decode.
+This project provides geohash (https://en.wikipedia.org/wiki/Geohash) encoding and decoding based on geohash-rust (https://github.com/georust/geohash). You can use `geohash_encode(longitude, latitude, zoom_level)` to decode and `geohash_decode(geohashstring)` to decode.
 
 Actually, this version is very early version, it is usable and more functionality will come.
 
